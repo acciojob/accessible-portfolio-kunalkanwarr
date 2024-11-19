@@ -4,12 +4,47 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<title>My Accessible Portfolio</title>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
+	 <!-- Main heading with ARIA role 'heading' -->
+    <h1 role="heading">Welcome to My Portfolio</h1>
+
+    <!-- Navigation bar with ARIA role 'navigation' -->
+    <nav role="navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#about">About Me</a></li>
+            <li role="listitem"><a href="#projects">Projects</a></li>
+            <li role="listitem"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Image with ARIA role 'img' and alt text for accessibility -->
+    <section id="about">
+        <h2 role="heading">About Me</h2>
+        <img src="profile.jpg" alt="A portrait of me smiling outdoors" role="img">
+        <p>I'm a passionate web developer with a love for creating accessible and user-friendly websites. My goal is to make the web a better place for everyone.</p>
+    </section>
+
+    <!-- Brief description section -->
+    <section id="projects">
+        <h2 role="heading">Projects</h2>
+        <ul role="list">
+            <li role="listitem">Project 1: Accessible Web Design</li>
+            <li role="listitem">Project 2: Interactive Web Applications</li>
+            <li role="listitem">Project 3: Mobile-First Development</li>
+        </ul>
+    </section>
+
+    <!-- Contact information -->
+    <section id="contact">
+        <h2 role="heading">Contact</h2>
+        <p>If you'd like to get in touch, feel free to send me an email at <a href="mailto:example@example.com">example@example.com</a>.</p>
+    </section>
 
 </body>
 
